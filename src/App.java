@@ -38,6 +38,11 @@ public class App {
            
             return binAnswer;
         }
+        public int binToDecimal(String val)
+        {
+            int decNum = Integer.parseInt(val,2);
+            return decNum;
+        }
         
        
     public static void main(String[] args) 
@@ -45,8 +50,17 @@ public class App {
         App me =new App();//Class Object
 
         Scanner user_input = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int val = user_input.nextInt();
-        System.out.print(me.DecimalToBin(val));
+        //String val = user_input.nextLine();
+       System.out.println("Number System Converter");
+       System.out.println("");
+       System.out.println("1 - Decimal to Hexadecimal");
+       System.out.println("2 - Decimal to Binary");
+       System.out.println("3 - Binary to Decimal");
+       System.out.println("");
+       
+       System.out.println("Option");
+       
+
+        
     }
 }
